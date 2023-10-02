@@ -3,7 +3,6 @@ import { useNavigate } from 'react-router-dom';
 
 //Importe de Estilo
 import './Home.css';
-import Routes from '../Route/Routes';
 
 function Home() {
 
