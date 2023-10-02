@@ -1,14 +1,17 @@
 import React from "react";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 
+//Importe de páginas
+import Home from "../Pages/Home";
+
 function Routes() {
     const router = createBrowserRouter([
         {
             path: '/',
-            element: <></>
+            element: <Home/>
         },
         {
-            path: '/',
+            path: '/tela2',
             element: <></>
         }
     ]);
