@@ -3,16 +3,17 @@ import { RouterProvider, createBrowserRouter } from "react-router-dom";
 
 //Importe de páginas
 import Home from '../Pages/Home/Home';
+import Pitch from "../Pages/Pitch/Pitch";
 
 function Routes() {
     const router = createBrowserRouter([
         {
             path: '/',
-            element: <Home/>
+            element: <Pitch/>
         },
         {
-            path: '/login',
-            element: <></>
+            path: '/home',
+            element: <Home/>
         },
     ]);
 

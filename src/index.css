@@ -1,10 +1,28 @@
-body {
+@import url("https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500;600;700&family=Poppins:wght@300;400;500;600&display=swap");
+
+html,
+body,
+html:focus-within {
+  scroll-behavior: smooth !important;
+}
+
+:root{
+  --dark: #242526;
+  --green: #3DCD58; 
+  scroll-behavior: smooth !important;
+  transition: 0.3s linear;
+  --bodyfont: "Poppins"; 
+}
+
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+::selection {
+  background-color: #fff;
+  color: var(--blue);
 }
 
 code {
