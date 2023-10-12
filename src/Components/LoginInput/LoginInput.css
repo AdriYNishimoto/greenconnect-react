@@ -1,0 +1,22 @@
+.box-input{
+    width: 50%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFF;
+}
+
+.box-input input{
+    width: 70%;
+    height: 50px;
+    background-color: #FFF;
+    border: none;
+}
+
+input:focus{
+    outline: 2px solid transparent;
+    border: none;
+}
+
+/*Texto*/
