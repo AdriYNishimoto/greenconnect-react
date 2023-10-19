@@ -1,7 +1,16 @@
-.login{
-    background-image: url("../../assets/vertical-green-forest-hills-kordun-croatia.jpg");
-    background-position: center;
+.login-container{
+    background: url('../../assets/vertical-green-forest-hills-kordun-croatia.jpg');
+    margin: 0;
     background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-container{
     width: 100vw;
     height: 100vh;
     display: flex;
@@ -9,41 +18,130 @@
     align-items: center;
 }
 
-.box-left{
-    width: 20vw;
-    height: 70vh;
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70vw;
+    height: 65vh;
+}
+
+.container-left{
+    width: 40%;
+    height: 100%;
+    background-color: aliceblue;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.box-left img{
-    width: 90%;
+.container-left img{
+    width: 80%;
 }
 
-.box-right{
-    width: 50vw;
-    height: 70vh;
+.container-right{
+    width: 100%;
+    height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.container-right h1{
+    font-size: 3.2rem;
+}
+
+.add{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: auto;
+}
+
+.add img{
+    width: 20%;
+}
+
+.add a{
+    text-decoration: none;
+    color: #FFF;
+}
+
+.add a:hover{
+    text-decoration: underline;
 }
 
 /*Fundo*/
-.bg-white {
-    background-color: rgba(255, 255, 255, 0.75);
-    /* Ajuste a cor de fundo e a opacidade desejada */
-    backdrop-filter: blur(10px);
-    /* Ajuste o valor de acordo com o desfoque desejado */
-    border-radius: 10px 0px 0px 10px;
-    background-image: url('../../assets/fosco.png');
-}
-
 .bg-gray {
     background-color: rgba(128, 128, 128, 0.1);
     /* Ajuste a cor de fundo e a opacidade desejada */
     backdrop-filter: blur(10px);
     /* Ajuste o valor de acordo com o desfoque desejado */
     border-radius: 0px 10px 10px 0px;
-    background-image: url('../../assets/fosco.png');
+    background-image: url("../../assets/fosco.png");
+}
+
+.bg-white {
+    background-color: rgba(255, 255, 255, 0.75);
+    /* Ajuste a cor de fundo e a opacidade desejada */
+    backdrop-filter: blur(10px);
+    /* Ajuste o valor de acordo com o desfoque desejado */
+    border-radius: 10px 0px 0px 10px;
+    background-image: url("../../assets/fosco.png");
+}
+
+/*Texto*/
+.title {
+    color: #FFFFFF;
+    font-size: 3.2rem;
+    font-weight: 100;
+    font-family: var(--font)
+}
+
+.sub-title {
+    color: #FFFFFF;
+    font-size: 1.2rem;
+    font-weight: 100;
+    font-family: var(--font);
+}
+
+.font{
+    font-family: var(--font);
+}
+
+
+/*Botão*/
+button{
+    background-color: var(--green);
+    color: #FFF;
+    width: 20%;
+    height: 30px;
+    border: none;
+    border-radius: 20px;
+    box-shadow: -9px 4px 14px 0px rgba(0,0,0,0.5);
+-webkit-box-shadow: -9px 4px 14px 0px rgba(0,0,0,0.5);
+-moz-box-shadow: -9px 4px 14px 0px rgba(0,0,0,0.5);
+    font-weight: 500;
+    font-family: var(--font);
+}
+
+button:hover{
+    color: var(--darkgreen);
+    background-color: #FFF;
+}
+
+/*Responsividade*/
+@media (min-width: 992px){
+    .right h1{
+        font-size: 2.2rem;
+    }
+}
+
+@media (min-width: 768px){
+    .right h1{
+        font-size: 2.0rem;
+    }
 }

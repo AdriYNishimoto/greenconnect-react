@@ -1,0 +1,27 @@
+.contact{
+    border: 1px solid #000;
+    border-radius: 30px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 10px;
+    font-size: small;
+    width: 100%;
+}
+
+.contact .contato-icon{
+    border: 1px solid #000;
+    border-radius: 100%;
+    padding: 10px;
+    font-size: 20px;
+}
+
+.nivel {
+    background-color: var(--green);
+    border-radius: 10px;
+    padding: 2%;
+    color: #FFF;
+    font-size: small;
+}

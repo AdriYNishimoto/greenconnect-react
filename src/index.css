@@ -4,6 +4,18 @@ html,
 body,
 html:focus-within {
   scroll-behavior: smooth !important;
+  font-family: 'Chivo', sans-serif;
+}
+
+body::-webkit-scrollbar {
+  width: 12px;
+  border: 1px solid var(--bgheader);
+  background-color: var(--bgheader);
+}
+
+body::-webkit-scrollbar-thumb {
+  background-image: linear-gradient(var(--green), var(--dark));
+  border-radius: 0px;
 }
 
 :root{
@@ -12,12 +24,26 @@ html:focus-within {
   scroll-behavior: smooth !important;
   transition: 0.3s linear;
   --bodyfont: "Poppins"; 
+  --bgheader: rgba(36, 37, 38, 1);
+}
+
+.white{
+  color: #FFF;
+}
+
+.dark{
+  color: var(--dark);
+}
+
+.green{
+  color: var(--green);
 }
 
 * {
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
+  text-decoration: none;
 }
 
 ::selection {

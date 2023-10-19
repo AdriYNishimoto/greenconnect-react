@@ -1,0 +1,52 @@
+.comentario{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: -9px 4px 14px 0px rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: -9px 4px 14px 0px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: -9px 4px 14px 0px rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.superior{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    margin: 10px;
+    gap: 10px;
+}
+
+.superior .icone1{
+    border: 1px solid black;
+    padding: 10px;
+    border-radius: 100%;
+    font-size: 1.3rem;
+}
+
+.inferior{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    border-top: 1px solid black;
+    margin-top: 15px;
+}
+
+.imagem{
+    display: flex;
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+
+.imagem img{
+    width: 30%;
+    height: auto;
+}

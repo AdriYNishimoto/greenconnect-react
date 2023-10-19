@@ -6,7 +6,7 @@ import './Header.css';
 //importe de imagens
 import Logo from '../../assets/logo.png';
 
-const Fotos = () => {
+const Header = () => {
 
     const navigate = useNavigate();
 
@@ -17,9 +17,9 @@ const Fotos = () => {
                 <label>Video do Projeto</label>
                 <label>Sobre o Projeto</label>
             </div>
-            <button onClick={() => navigate('/home')}>LOGIN</button>
+            <button onClick={() => navigate('/login')}>LOGIN</button>
         </div>
     );
 }
 
-export default Fotos;
+export default Header;

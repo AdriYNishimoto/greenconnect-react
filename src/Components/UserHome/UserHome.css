@@ -1,0 +1,50 @@
+.user{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.user-icon{
+    border: 1px solid black;
+    padding: 10px;
+    border-radius: 100%;
+    font-size: 2.0rem;
+}
+
+.user .info {
+    display: flex;
+    flex-direction: column;
+}
+
+.user .info1 {
+    width: auto;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    flex-direction: row;
+    gap: 5px;
+    font-size: 0.7rem;
+}
+
+
+.user .info1 label{
+    color: var(--dark);
+}
+.user .info2 label{
+    color: var(--dark);
+}
+
+.user .info2 {
+    width: auto;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    flex-direction: column;
+    font-size: 0.7rem;
+}

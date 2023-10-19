@@ -1,0 +1,124 @@
+.profile-container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profile-banner{
+    width: 80%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.profile-user{
+    display: flex;
+    position: absolute;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    height: auto;
+    margin-top: 14%;
+}
+
+.user-left{
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+}
+
+.profile-user .profile-icon{
+    font-size: 130px;
+    border: 1px solid black;
+    border-radius: 100%;
+    padding: 35px;
+    background-color: #FFF;
+}
+
+.profile-user .info{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    flex-direction: column;
+    font-size: 0.7rem;
+}
+
+.profile-content{
+    display: flex;
+    width: 100%;
+    height: auto;
+    flex-direction: row;
+    align-items: start;
+    justify-content: center;
+    margin-top: 15%;
+    gap: 40px;
+}
+
+.conquista{
+    box-shadow: -9px 4px 14px 0px rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: -9px 4px 14px 0px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: -9px 4px 14px 0px rgba(0, 0, 0, 0.5);
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 15px;
+    border-radius: 20px;
+}
+
+.publicacao{
+    width: 50%;
+
+}
+
+/*Diversos*/
+
+.name{
+    font-size: 1.2rem;
+    font-weight: 900;
+}
+
+.edit{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--green);
+    font-weight: 700;
+    padding: 0px 10px 0px 10px;
+    border-radius: 30px;
+    font-size: 1rem;
+    color: #FFF;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    width: 100%;
+    height: auto;
+    padding: 10px;
+}
+
+.usuario{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 5px;
+}
+
+.nivel{
+    font-size: 0.5rem;
+    background-color: var(--green);
+    font-weight: 700;
+
+}

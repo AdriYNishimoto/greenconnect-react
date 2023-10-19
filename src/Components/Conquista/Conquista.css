@@ -1,0 +1,10 @@
+.conquista-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.conquista-container img{
+    width: 20%;
+}

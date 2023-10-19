@@ -9,7 +9,8 @@ const InstBox = ({ texto, imagem }) => {
         <>
             <div className="content">
                 <img src={imagem} alt="" />
-                <h1>{texto}</h1>
+                <div className="content-line"></div>
+                <h4>{texto}</h4>
             </div>
         </>
     );
