@@ -1,0 +1,28 @@
+.noticia-container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    position: relative;
+}
+
+.noticia-subcontainer{
+    display: flex;
+    margin: 5%;
+    align-items: start;
+    justify-content: center;
+    width: 80vw;
+    height: auto;
+    flex-direction: column;
+}
+
+.noticia{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.noticia img{
+    width: 60%;
+}

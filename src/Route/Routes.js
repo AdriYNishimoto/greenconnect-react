@@ -9,6 +9,9 @@ import Login from "../Pages/Login/Login";
 import Games from "../Pages/Games/Games";
 import Conteudo from "../Pages/Conteudo/Conteudo";
 import Profile from "../Pages/Profile/Profile";
+import Rede from "../Pages/Rede/Rede";
+import Grupos from "../Pages/Grupos/Grupos";
+import Noticias from "../Pages/Noticias/Noticias";
 
 function Routes() {
     const router = createBrowserRouter([
@@ -39,6 +42,18 @@ function Routes() {
         {
             path: '/perfil',
             element: <Profile/>
+        },
+        {
+            path: '/rede',
+            element: <Rede/>
+        },
+        {
+            path: '/grupos',
+            element: <Grupos/>
+        },
+        {
+            path: '/noticias',
+            element: <Noticias/>
         }
     ]);
 

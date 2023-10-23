@@ -1,0 +1,34 @@
+.rede-container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    position: relative;
+}
+
+.rede-subcontainer{
+    width: 80vw;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    margin: 10%;
+}
+
+.rede-contatos{
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    width: 50%;
+    height: 100%;
+    gap: 20px;
+    margin-top: 40px;
+}
+
+.rede-plus{
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}

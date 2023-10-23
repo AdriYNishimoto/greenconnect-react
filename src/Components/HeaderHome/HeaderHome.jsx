@@ -17,7 +17,7 @@ const HeaderHome = () => {
                 <a onClick={() => navigate('/home')}>Home</a>
                 <a onClick={() => navigate('/rede')}>Rede</a>
                 <a onClick={() => navigate('/grupos')}>Grupos</a>
-                <a onClick={() => navigate('/noticiais')}>Notícias</a>
+                <a onClick={() => navigate('/noticias')}>Notícias</a>
                 <a onClick={() => navigate('/conteudo')}>Conteúdos</a>
                 <a onClick={() => navigate('/ranking')}>Ranking</a>
                 <a onClick={() => navigate('/games')}>Games</a>
