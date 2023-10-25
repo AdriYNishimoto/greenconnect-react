@@ -29,6 +29,8 @@ import { useEffect } from "react";
 
 export default function Home() {
 
+    document.title = "GreenConnect | Home";
+
     return (
         <>
             <HeaderHome />

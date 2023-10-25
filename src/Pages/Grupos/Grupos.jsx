@@ -7,6 +7,9 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPlus } from '@fortawesome/free-solid-svg-icons';
 
 function Grupos() {
+
+    document.title = "GreenConnect | Grupos";
+
     return (
         <>
             <HeaderHome />

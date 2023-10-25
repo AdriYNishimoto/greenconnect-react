@@ -13,7 +13,7 @@ const HeaderHome = () => {
     return (
         <div class="header">
             <div class="left">
-                <img src={Logo} alt="Logo GreenConnect" onclick="HomePage()" />
+                <img src={Logo} alt="Logo GreenConnect" onClick={() => navigate('/')} />
                 <a onClick={() => navigate('/home')}>Home</a>
                 <a onClick={() => navigate('/rede')}>Rede</a>
                 <a onClick={() => navigate('/grupos')}>Grupos</a>

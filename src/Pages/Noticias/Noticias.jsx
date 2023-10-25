@@ -4,6 +4,9 @@ import Separador from '../../Components/Separador/Separador';
 import imagem from '../../assets/image 5.png';
 
 function Noticias(){
+
+    document.title = "GreenConnect | Notícias";
+
     return(
         <>
             <HeaderHome/>

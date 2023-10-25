@@ -11,6 +11,7 @@ import image1Inst from '../../assets/image 11.png'
 import image2Inst from '../../assets/image 12.png'
 import image3Inst from '../../assets/image 13.png'
 import image4Inst from '../../assets/image 9 (1).png'
+import image5Inst from '../../assets/image 14.png';
 import Logo from "../../assets/logo.png"
 import Foto2 from "../../assets/Conteudo_2.png";
 import HeaderHome from "../../Components/HeaderHome/HeaderHome";
@@ -19,7 +20,7 @@ import Separador from '../../Components/Separador/Separador';
 function Instituto() {
 
     //ArrayList de Usuários
-    const usuarios = [
+    const instituto = [
         {
             id: 1,
             texto: "INSTITUTO SE NA COMUNIDADE – AÇÃO WORLD CLEAN UP DAY 2021 – JUNTOS POR HÁBITOS MAIS SUSTENTÁVEIS",
@@ -42,6 +43,9 @@ function Instituto() {
         },
     ];
 
+    document.title = "GreenConnect | Instituto";
+
+
     return (
         <>
             <HeaderHome />
@@ -52,10 +56,10 @@ function Instituto() {
                 </div>
                 <div className="instituto-list">
                     {
-                        usuarios.map((usuario, index) => (
+                        instituto.map((institutos, index) => (
                             <InstBox
-                                texto={usuario.texto}
-                                imagem={usuario.imagem}
+                                texto={institutos.texto}
+                                imagem={institutos.imagem}
                                 key={index}
                             />
                         ))
@@ -70,7 +74,20 @@ function Instituto() {
                         <Separador titulo={"Conheça também a Fundação Schneider Eletric"}/>
                         <h4>Apoiamos indivíduos e comunidades em todo o mundo com educação e formação, por meio de nossa rede ativa de voluntariado e parceiros locais.</h4>
                     </div>
-                </div>
+                    <div className='instituto-cont'>
+                        <div className="instituto-cont-img">
+                            <img src={image5Inst} alt="" />
+                        </div>
+                        <div className="instituto-cont-btn">
+                            <h2>
+                            Fazer a ponte entre o progresso e a sustentabilidade para todos 
+                            </h2>
+                            <div className='instituto-btn'>
+                                <span>CONHEÇA MAIS</span>
+                            </div>
+                        </div>
+                    </div>
+            </div>
         </>
     );
 }

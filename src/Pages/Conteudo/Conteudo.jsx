@@ -11,6 +11,9 @@ font-family: 'Chivo', sans-serif;
 `
 
 function Conteudo() {
+
+    document.title = "GreenConnect | Conteúdos";
+
     return (
         <>
             <HeaderHome />

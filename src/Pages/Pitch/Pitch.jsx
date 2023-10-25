@@ -4,12 +4,15 @@ import React from "react";
 import './Pitch.css';
 import Header from "../../Components/Header/Header";
 
-function Pitch(){
+function Pitch() {
+    
     document.title = "GreenConnect";
-    return(
+
+    return (
         <>
-            <div className="container">
-                <Header/>
+            <Header />
+            <div className="pitch-container">
+
             </div>
         </>
     );

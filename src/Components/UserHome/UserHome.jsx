@@ -17,7 +17,7 @@ const UserHome = () => {
                     <div class="info2">
                         <label>Experiência Sustentavel</label>
                         <label class="points">21100/44100</label>
-                        <progress value="70" max="100"></progress>
+                        <progress value="70" max="100"></progress> 
                     </div>
                 </div>
         </div>

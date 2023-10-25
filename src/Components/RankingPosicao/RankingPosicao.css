@@ -1,0 +1,16 @@
+.posicao {
+    transform: rotate(-90deg);
+    width: 200px;
+    height: 40px;
+    border: none;
+    background-color: #fff;
+}
+
+
+.posicao::-webkit-progress-value {
+    background: var(--green);
+}
+
+.posicao::-moz-progress-bar {
+    background: var(--green);
+  }

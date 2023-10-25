@@ -30,6 +30,8 @@ function Profile() {
         },
     ]
 
+    document.title = "GreenConnect | Seu Perfil";
+
     return (
         <>
             <HeaderHome />

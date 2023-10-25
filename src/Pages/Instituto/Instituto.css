@@ -30,3 +30,27 @@
     letter-spacing: 3px;
 }
 
+.instituto-cont{
+    display: flex;
+    flex-direction: row;
+    margin: 50px;
+    text-align: center;
+}
+
+.instituto-cont-img{
+    width: 628px;
+    height: 537px;
+}
+
+.instituto-cont-btn{
+    justify-content: center;
+    text-align: start;
+    margin: 70px;
+    height: 240px;
+    width: 418px;
+}
+
+.instituto-cont-btn h2{
+    font-size: 50px;
+}
+

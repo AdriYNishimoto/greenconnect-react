@@ -16,6 +16,8 @@ font-family: 'Chivo', sans-serif;
 `
 function Games() {
 
+  document.title = "GreenConnect | Games";
+
   const games = [
     {
       title: 'Quiz da Sustentabilidade',

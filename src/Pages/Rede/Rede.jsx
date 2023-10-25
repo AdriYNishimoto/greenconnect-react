@@ -7,6 +7,9 @@ import './Rede.css';
 import { faPlus } from '@fortawesome/free-solid-svg-icons';
 
 function Rede() {
+
+    document.title = "GreenConnect | Rede";
+
     return (
         <>
             <HeaderHome />
