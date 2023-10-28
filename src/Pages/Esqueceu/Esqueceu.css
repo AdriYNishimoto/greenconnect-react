@@ -1,4 +1,4 @@
-.login-container{
+.esqueceu-container{
     background: url('../../assets/vertical-green-forest-hills-kordun-croatia.jpg');
     margin: 0;
     background-size: cover;
@@ -10,7 +10,7 @@
     align-items: center;
 }
 
-.login-container{
+.esqueceu-container{
     width: 100vw;
     height: 100vh;
     display: flex;
@@ -50,7 +50,7 @@
 }
 
 .container-right h1{
-    font-size: 3.2rem;
+    font-size: 2.2rem;
 }
 
 .add{
@@ -68,7 +68,6 @@
 .add a{
     text-decoration: none;
     color: #FFF;
-    cursor: pointer;
 }
 
 .add a:hover{
@@ -113,31 +112,10 @@
     font-family: var(--font);
 }
 
-
-/*Botão*/
-button{
-    background-color: var(--green);
-    color: #FFF;
-    width: 20%;
-    height: 30px;
-    border: none;
-    border-radius: 20px;
-    box-shadow: -9px 4px 14px 0px rgba(0,0,0,0.5);
--webkit-box-shadow: -9px 4px 14px 0px rgba(0,0,0,0.5);
--moz-box-shadow: -9px 4px 14px 0px rgba(0,0,0,0.5);
-    font-weight: 500;
-    font-family: var(--font);
-}
-
-button:hover{
-    color: var(--darkgreen);
-    background-color: #FFF;
-}
-
 /*Responsividade*/
 @media (min-width: 992px){
     .right h1{
-        font-size: 2.2rem;
+        font-size: 1.2rem;
     }
 }
 

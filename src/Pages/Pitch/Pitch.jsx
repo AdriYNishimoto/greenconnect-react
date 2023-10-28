@@ -13,10 +13,17 @@ import imgInf4 from "../../assets/arvore 1.png"
 
 
 import Separador from "../../Components/Separador/Separador"
+import { useNavigate } from "react-router-dom";
 
 function Pitch() {
     
     document.title = "GreenConnect";
+
+    const navigate = useNavigate();
+
+    const _youtubelink = () => {
+        window.open('https://www.youtube.com/embed/-BckONx1bLw');
+    }
 
     return (
         <>
@@ -29,7 +36,7 @@ function Pitch() {
                         <h1>Schneider GreenConnect: Transformando a Sustentabilidade em Ação</h1>
                         <h2>Schneider GreenConnect é mais do que apenas uma plataforma, é a concretização do compromisso da Schneider Electric com um futuro mais sustentável.</h2>
                         <h2>Uma inovadora iniciativa digital projetada para integrar e promover a sustentabilidade em todos os aspectos da empresa. Oferecendo aos funcionários uma variedade de conteúdos educacionais, desafios motivacionais e oportunidades de voluntariado relacionados à sustentabilidade.</h2>
-                        <button type="submit" class="btn btn-primary">LOGIN</button>
+                        <button type="submit" class="btn btn-primary" onClick={() => navigate('/login')}>LOGIN</button>
                     </div>
                     <div className="pitch-info-logo">
                         <img src={imgLogo} alt="" width='auto' height='auto'/>
@@ -62,16 +69,18 @@ function Pitch() {
                     </div>
                 </div>
                 <div className="pitch-video">
-                    <Separador></Separador>
-                    <h1>CONFIRA O VÍDEO PITCH</h1>
+                    <Separador
+                        titulo={"Confira o Video Pitch"}
+                    />
                     <iframe width="887" height="499" src="https://www.youtube.com/embed/okNnuVmdNFs" title="Schneider GreenConnect" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                    <button type="submit" class="btn btn-primary">VIDEO PICTH</button>
+                    <button type="submit" class="btn btn-primary" onClick={() => _youtubelink()}>VIDEO PICTH</button>
                 </div>
                 <div className="pitch-sobre">
                     <div className="pitch-sobre-projeto">
-                    <Separador></Separador>
-                    <h1>CONHEÇA MAIS SOBRE O PROJETO</h1>
-                    <button type="submit" class="btn btn-primary">SOBRE O PROJETO</button>
+                    <Separador
+                        titulo={"Conheça mais sobre o Projeto"}
+                    />
+                    <button type="submit" class="btn btn-primary" onClick={() => navigate('/sobre')}>SOBRE O PROJETO</button>
                     </div>
                     <div className="pitch-sobre-img">
                         <img src={imgSobre} alt="" width='60%' height='auto'/>

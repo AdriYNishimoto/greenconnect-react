@@ -25,12 +25,19 @@ import Mensagem from "../../Components/Mensagens/Mensagem";
 import mensagens from "../../Lista/ArrayMensagem";
 import { layer } from "@fortawesome/fontawesome-svg-core";
 import { useEffect } from "react";
+import Modal from "../../Components/Modal/Modal";
 
 export default function Home() {
 
     document.title = "GreenConnect | Home";
 
     const [usuarios, setUsuarios] = useState([]);
+
+    const [isModalOpen, setIsModalOpen] = useState(false);
+
+    useEffect(() => {
+        setIsModalOpen(true)
+    }, []);
 
     useEffect(() => {
         fetch('https://localhost:7252/api/usuario', {
@@ -43,8 +50,16 @@ export default function Home() {
             })
     }, []);
 
+    const closeModal = () => {
+        setIsModalOpen(false);
+    };
     return (
         <>
+            <Modal
+                isOpen={isModalOpen}
+                closeModal={() => closeModal()}
+                children={"Seja Bem-Vindo(a) a GreenConnect!"}
+            />
             <HeaderHome />
             <div className="homeContainer">
                 <div className="home-left">

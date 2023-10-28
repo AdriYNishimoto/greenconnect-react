@@ -15,6 +15,7 @@ import Noticias from "../Pages/Noticias/Noticias";
 import Diversidade from "../Pages/Diversidade/Diversidade";
 import Ranking from "../Pages/Ranking/Ranking";
 import Sobre from "../Pages/Sobre/Sobre";
+import Esqueceu from "../Pages/Esqueceu/Esqueceu";
 
 function Routes() {
     const router = createBrowserRouter([
@@ -69,6 +70,10 @@ function Routes() {
         {
             path: '/sobre',
             element: <Sobre/>
+        },
+        {
+            path: '/esqueceu',
+            element: <Esqueceu/>
         }
     ]);
 
