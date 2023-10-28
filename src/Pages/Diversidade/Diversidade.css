@@ -1,0 +1,40 @@
+.diversidade-container{
+    text-align: start;
+    margin: 50px 125px 0 125px;
+}
+
+.diversidade-title{
+    margin-bottom: 20px;
+}
+
+.diversidade-title h4{
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 300px;
+    line-height: normal;
+    letter-spacing: 3px;
+}
+
+.diversidade-cont{
+    display: flex;
+    flex-direction: row;
+    margin: 40px;
+    text-align: center;
+}
+
+.diversidade-cont-img{
+    width: 698px;
+    height: 466px;
+}
+
+.diversidade-cont-btn{
+    justify-content: center;
+    text-align: start;
+    margin: 60px;
+    height: 240px;
+    width: 418px;
+}
+
+.diversidade-cont-btn h2{
+    font-size: 30px;
+}

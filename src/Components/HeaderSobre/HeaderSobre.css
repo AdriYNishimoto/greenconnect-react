@@ -1,0 +1,39 @@
+.header-sobre{
+    background-color: var(--dark);
+    width: 100vw;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.header-sobre img{
+    width: 150px;
+    background-color: #fff;
+    border-radius: 100%;
+    margin-top: 9%;
+}
+
+button{
+    background-color: var(--green);
+    color: white;
+    border: none;
+    width: 130px;
+    height: 30px;
+    border-radius: 30px;
+}
+
+button:hover{
+    background-color: #fff;
+    color: var(--green);
+}
+
+label{
+    color: #fff;
+    font-family: var(--bodyfont);
+    font-size: 15px;
+}
+
+label:hover{
+    text-decoration: underline;
+}

@@ -16,7 +16,6 @@ import Separador from "../../Components/Separador/Separador";
 import Conteudo from "../../Components/ConteudoButton/ConteudoButton";
 
 //Importe de Lista de usuarios
-import usuario from "../../Lista/ArrayUsuario";
 import grupos from "../../Lista/ArrayGrupos";
 import conteudos from "../../Lista/ArrayConteudo";
 
@@ -31,6 +30,19 @@ export default function Home() {
 
     document.title = "GreenConnect | Home";
 
+    const [usuarios, setUsuarios] = useState([]);
+
+    useEffect(() => {
+        fetch('https://localhost:7252/api/usuario', {
+            method: 'GET',
+        })
+            .then((response) => response.json())
+            .then((json) => setUsuarios(json))
+            .catch((err) => {
+                console.log(err);
+            })
+    }, []);
+
     return (
         <>
             <HeaderHome />
@@ -39,10 +51,10 @@ export default function Home() {
                     <UserHome />
                     <Separador titulo={"Minha Rede"} />
                     {
-                        usuario.map((usuarios, index) => (
+                        usuarios.map((usuario, index) => (
                             <Contato
-                                nome={usuarios.nome}
-                                nivel={usuarios.nivel}
+                                nome={usuario.nome}
+                                nivel={usuario.nivel}
                                 key={index}
                             />
                         ))
@@ -90,12 +102,12 @@ export default function Home() {
                 <div className="home-right">
                     <Separador titulo={"Ranking da Semana"} />
                     {
-                        usuario.map((usuarios, index) => (
+                        usuarios.map((usuario, index) => (
                             <div className="ranking">
-                                <label className="dark">{usuarios.id}º</label>
+                                <label className="dark">{usuario.id}º</label>
                                 <Contato
-                                    nome={usuarios.nome}
-                                    nivel={usuarios.nivel}
+                                    nome={usuario.nome}
+                                    nivel={usuario.id}
                                     key={index}
                                 />
                             </div>

@@ -1,5 +1,140 @@
 .pitch-container{
-    width: 100vw;
-    height: 100vh;
-    position: relative;
+    text-align: start;
+    margin: 50px 125px 0 125px;
+}
+
+.pitch-info{
+    display: flex;
+}
+
+.pitch-info-login{
+    padding: 30px;
+}
+
+.pitch-info-login h1{
+    color: #3DCD58;
+    font-family: Chivo;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+    letter-spacing: 4.5px;
+}
+
+.pitch-info-login h2{
+    color: #000;
+    font-family: Chivo;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 3.6px;
+}
+
+.pitch-info-login button{
+    margin: 5%;
+    width: 170px;
+    height: 40px;
+    background-color: #3DCD58;  
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1)
+}
+
+.pitch-info2{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+.pitch-info2-img{
+    margin: 50px;
+}
+
+.pitch-info2-img h4{
+    color: #000;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 3.6px;
+}
+
+.pitch-info3{
+    display: flex;
+    flex-direction: row;
+    text-align: start;
+    align-items: center;
+    justify-items: center;
+}
+
+.pitch-info3 h3{
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+    letter-spacing: 4.5px;
+}
+
+.pitch-video{
+    padding-bottom: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    text-align: center;
+    align-items: center;
+    margin-top: 3%;
+}
+
+.pitch-video button{
+    margin: 3%;
+    width: 170px;
+    height: 40px;
+    background-color: #3DCD58;  
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1)
+}
+
+.pitch-video iframe{
+    margin: 20px;
+}
+
+.pitch-sobre{
+    display: flex;
+}
+
+.pitch-sobre-projeto{
+    align-items: center;
+    text-align: center;   
+}
+
+.pitch-sobre-projeto h1{
+    text-align: start;
+    padding-bottom: 30px;
+}
+
+.pitch-sobre-projeto button{
+    margin: 5%;
+    width: 170px;
+    height: 40px;
+    background-color: #3DCD58;  
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1)
+}
+
+.pitch-sobre-img{
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    text-align: center;
 }

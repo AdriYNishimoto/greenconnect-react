@@ -17,6 +17,9 @@ import Foto2 from "../../assets/Conteudo_2.png";
 import HeaderHome from "../../Components/HeaderHome/HeaderHome";
 import Separador from '../../Components/Separador/Separador';
 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faPlus } from '@fortawesome/free-solid-svg-icons';
+
 function Instituto() {
 
     //ArrayList de Usuários
@@ -65,8 +68,9 @@ function Instituto() {
                         ))
                     }
                 </div>
-                <div className='instituto-btn'>
-                    <span>CONHEÇA MAIS</span>
+                <div className="conexao">
+                    <label className="dark">CONHEÇA MAIS</label>
+                    <FontAwesomeIcon icon={faPlus} className="plus" />         
                 </div>
             </div>
             <div className='instituto-container'>
@@ -82,8 +86,9 @@ function Instituto() {
                             <h2>
                             Fazer a ponte entre o progresso e a sustentabilidade para todos 
                             </h2>
-                            <div className='instituto-btn'>
-                                <span>CONHEÇA MAIS</span>
+                            <div className="conexao">
+                                <label className="dark">CONHEÇA MAIS</label>
+                                <FontAwesomeIcon icon={faPlus} className="plus" />
                             </div>
                         </div>
                     </div>

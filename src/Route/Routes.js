@@ -14,6 +14,7 @@ import Grupos from "../Pages/Grupos/Grupos";
 import Noticias from "../Pages/Noticias/Noticias";
 import Diversidade from "../Pages/Diversidade/Diversidade";
 import Ranking from "../Pages/Ranking/Ranking";
+import Sobre from "../Pages/Sobre/Sobre";
 
 function Routes() {
     const router = createBrowserRouter([
@@ -64,6 +65,10 @@ function Routes() {
         {
             path: '/ranking',
             element: <Ranking/>
+        },
+        {
+            path: '/sobre',
+            element: <Sobre/>
         }
     ]);
 

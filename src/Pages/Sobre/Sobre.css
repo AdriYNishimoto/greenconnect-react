@@ -1,0 +1,35 @@
+
+.Sobre-body {
+  background-color: #ffffff;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.Sobre-body-container{
+  width: 100vw;
+}
+
+.Sobre-body-container-margin{
+  margin: 0px 75px 0px 75px;
+}
+
+h2, ol{
+  font-size: 20px;
+  font-weight: 400;
+  letter-spacing: 3.6px;
+}
+
+.sobreProjeto,.sobreDesenvolvimento, .equipe{
+  margin: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  gap: 20px;
+}
+
+.sobreProjeto-list-block{
+  padding-left: 40px;
+}
